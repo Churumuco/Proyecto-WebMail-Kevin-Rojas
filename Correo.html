@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>WebMail</title>
+	<style type="text/css">
+
+
+body{
+	background: url(http://jinqiaojs.com/hd/shiny-metal-hd-wallpaper-high-resolution-9f4.jpg);
+	background-size: 1920px 1500px;
+	background-position: center;
+}
+
+
+#menu ul {
+	float: left;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    width: 200px;
+    font: oblique 90% serif; 
+    font-size: 11pt;
+}
+
+#menu ul li a {
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    padding: 10px 10px 10px 20px;
+}
+
+#menu ul li a:hover {
+    background: #000;
+    border-left: 10px solid #333;
+    color: #fff;
+}
+
+table, td, th {
+    border: 1px solid black;
+    margin: 50px;
+    padding: 0px;
+    width: 200px;
+    font: oblique 90% serif; 
+    font-size: 11pt;s
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    height: 50px;
+    background-color: gray;
+    color: white;
+    text-align: center;
+}
+
+td{
+	text-align: center;
+} 
+
+#searchbox
+{
+    background-color: #C0C0C0;
+    background-image: linear-gradient(#C0C0C0, #000);
+    border-radius: 35px;    
+    border-width: 1px;
+    border-style: solid;
+    border-color: #C0C0C0 #C0C0C0 #C0C0C0;            
+    width: 500px;
+    height: 35px;
+    padding: 10px;
+    margin: 50px auto 50px;
+    overflow: hidden; /* Clear floats */
+}
+
+#search, 
+#submit {
+    float: left;
+}
+
+#search {
+    padding: 5px 9px;
+    height: 23px;
+    width: 380px;
+    border: 1px solid #C0C0C0;
+    font: normal 13px 'trebuchet MS', arial, helvetica;
+    background: #f1f1f1;
+    border-radius: 50px 3px 3px 50px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 rgba(255, 255, 255, 1);            
+}
+
+/* ----------------------- */
+
+#submit
+{       
+    background-color: #C0C0C0;
+    background-image: linear-gradient(#C0C0C0, #808080);
+    border-radius: 3px 50px 50px 3px;    
+    border-width: 1px;
+    border-style: solid;
+    border-color: #808080 #808080 #808080;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 
+                0 1px 0 rgba(255, 255, 255, 0.3) inset;
+    height: 35px;
+    margin: 0 0 0 10px;
+    padding: 0;
+    width: 90px;
+    cursor: pointer;
+    font: bold 14px Arial, Helvetica;
+    color: #23441e;    
+    text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+}
+
+#submit:hover {       
+    background-color: #C0C0C0;
+    background-image: linear-gradient(#808080, #808080);
+}   
+
+#submit:active {       
+    background: #C0C0C0;
+    outline: none;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;        
+}
+
+#submit::-moz-focus-inner {
+       border: 0;  /* Small centering fix for Firefox */
+}
+	</style>
+
+</head>
+<body>
+    
+	<form id="searchbox" action="" align = "center">
+    <input id="search" type="text" placeholder="Buscar...">
+    <input id="submit" type="submit" value="Buscar">
+	</form>
+
+	<div id="menu">
+ <ul>
+ 	<div align="center"><img src="http://3.bp.blogspot.com/-m_MLSrvRFlc/VijkJ0CjcJI/AAAAAAAAAG0/ayyvMZZNjhk/s320/EmailLogo.png" 
+	border="0" width="200" height="100">  
+ <li><a href="..." title="...">Recibidos</a></li>
+ <li><a href="..." title="...">Enviados</a></li>
+ <li><a href="..." title="...">Borrador</a></li>
+ <li><a href="..." title="...">Eliminados</a></li>
+</div>
+ </ul>
+</div>
+
+	<form>
+<table table style="width: 80%; margin-left: auto; margin-right: auto;"> 
+  <tr>
+  	<th><input type="checkbox" name="check" height: 50px;></th>
+    <th>Remitente</th>
+    <th>Asunto</th>
+    <th>Fecha</th>
+  </tr>
+  <tr>
+  	<td><input type="checkbox" name="check"></td>
+    <td><b>GitHub</td>
+    <td><b>[GitHub]Please verify your email adress.</td>
+    <td><b>Vie 04:44 p.m.</td>
+  </tr>
+  <tr>
+  	<td><input type="checkbox" name="check"></td>
+    <td><b>Facebook</td>
+    <td><b>Kevin, tienes 3 notificaciones nuevas.</td>
+    <td><b>Dom 08:03 a.m.</td>
+  </tr>
+  <tr>
+  	<td><input type="checkbox" name="check"></td>
+    <td><b>Iconfinder</td>
+    <td><b>Welcome to Iconfinder.</td>
+    <td><b>Lun 10:11 a.m.</td>
+  </tr>
+  <tr>
+  	<td><input type="checkbox" name="check"></td>
+    <td><b>Twitch</td>
+    <td><b>Verify your Twitch email adress.</td>
+    <td><b>Lun 02:33 p.m.</td>
+</tr>
+</table>
+	</form>
+</body>
+</htm
